@@ -14,6 +14,8 @@ int main()
   else
     w++;
  }
+  free(ptr);
+  ptr=NULL;
  cout<<m<<"\n"<<w;
  return 0;
 }
