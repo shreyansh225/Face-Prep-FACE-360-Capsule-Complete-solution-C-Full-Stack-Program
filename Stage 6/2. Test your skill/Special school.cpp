@@ -4,15 +4,14 @@
 using namespace std; 
 char *rev(char *str2)
 {
-  int i=0,j=0;
-  while(str2[j+1]) j++;
- while(i < j)
+  int i=0,len;
+ len=strlen(str2);
+ while(i < len--)
 {
-char temp=str2[i];
-str2[i]=str2[j];
-str2[j]=temp;
-i++;
-j--;
+ char temp=str2[i];
+ str2[i]=str2[len];
+ str2[len]=temp;
+ i++;
 }
 }
 int main()
